@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/use-package', function () {
-//    return  \SahelAshrafi\ApiCaller\ApiCaller::weather();
+
     $test = new \SahelAshrafi\ApiCaller\ApiCaller();
     return $test->weather();
 });

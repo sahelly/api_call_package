@@ -14,7 +14,19 @@ class CreateWeatherReportsTable extends Migration
     public function up()
     {
         Schema::create('weather_reports', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->string("city_name");
+            $table->string("country");
+            $table->string("lat");
+            $table->string("lan");
+            $table->string("observation_time");
+            $table->string("temperature");
+            $table->string("wind_speed");
+            $table->string("wind_degree");
+            $table->string("wind_dir");
+            $table->string("pressure");
+            $table->string("humidity");
+
             $table->timestamps();
         });
     }
