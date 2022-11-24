@@ -6,11 +6,13 @@ class ApiCallerServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        dd("package works well");
+
     }
 
     public function register()
     {
-
+        $this->app->singleton(ApiCaller::class, function (){
+            return new ApiCaller();
+        });
     }
 }

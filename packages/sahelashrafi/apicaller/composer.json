@@ -1,0 +1,24 @@
+{
+    "name": "sahelashrafi/apicaller",
+    "description": "this package calls apis with json or xml responses and saves the needed data in database",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sahel",
+            "email": "mahdieh.ashrafi.s.a@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "SahelAshrafi\\ApiCaller\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers":[
+                "SahelAshrafi\\ApiCaller\\ApiCallerServiceProvider"
+            ]
+        }
+    }
+}
